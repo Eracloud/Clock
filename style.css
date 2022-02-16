@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --arrowLoc: 0;
+}
+
+.clockFace {
+  margin: auto;
+  position: relative;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  border: 5px solid black;
+}
+
+.clockFace__number--3 {
+  position: absolute;
+  right: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-size: 60px;
+}
+
+.clockFace__number--6 {
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 60px;
+}
+
+.clockFace__number--9 {
+  position: absolute;
+  left: 0%;
+  top: 50%;
+  transform: translateY(-50%);
+  color: red;
+  font-size: 60px;
+}
+
+.clockFace__number--12 {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: red;
+  font-size: 60px;
+}
+
+.arrow {
+  width: 3px;
+  height: 46%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: black;
+  /* transform-origin: 50% 100%; */
+}
+
+.arrow--sec {
+  width: 1px;
+  transform: translate(-50%, -100%);
+}
+
+.arrow--min {
+  height: 38%;
+  /* transform: translate(-50%, -100%); */
+}
+
+.arrow--hour {
+  width: 6px;
+  height: 30%;
+  /* transform: translate(-50%, -100%); */
+}
